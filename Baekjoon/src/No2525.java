@@ -9,20 +9,21 @@ public class No2525 {
 		int B = scan.nextInt();
 		int C = scan.nextInt();
 		
-		
-		if( A != 23 && (B + C) < 60  ) {
-			System.out.println( A +" "+ (B+C));
-		}else if(A != 23 && (B + C) > 60  ) {
-			System.out.println( A+1 +" "+ ((B+C)-60));
-		}else if( A == 23 && (B + C) > 60  ) {
-			System.out.println( 0 +" "+ ((B+C)-60));
+		if(B+C < 60) {
+			System.out.println(A +" "+ (B+C));
+			
+		}else {
+			
+			int b = (B+C)%60;
+			int c = (B+C)/60;
+			
+			if ((A+c) >= 24) {
+				System.out.println(((A+c)%24) + " " + (b));
+			}else {
+				System.out.println((A+c) + " " + (b));
+			}
+			
 		}
-	
-	
-	
-	
-	
-	
 	
 	
 	
