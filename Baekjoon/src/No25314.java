@@ -6,21 +6,12 @@ public class No25314 {
 		Scanner scan = new Scanner(System.in);
 
 		int n = scan.nextInt();
-		String s = "";
 		
-		if(n > 4) {
-		for (int i = 8; i <= n; i+=4) {
-			s += "long";
+		for(int i = 0; i < n;  i+=4) {
+			System.out.printf("long ");
 		}
-	
-	
-	}
-		s += "long int";
-		System.out.println(s);
-	
-	
-	
-	
+			System.out.println("int");
+		
 	}
 
 }
